@@ -1,0 +1,38 @@
+{
+  "name": "whats_app_cloud_api_nodejs",
+  "version": "1.0.0",
+  "description": "Ecommerce automated with Whats APP cloud nodejs ",
+  "main": "dist",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.16.3",
+    "express-status-monitor": "^1.2.3",
+    "express-validator": "^5.3.0",
+    "lodash": "^4.17.11",
+    "memory-cache": "^0.2.0",
+    "pug": ">=3.0.1",
+    "tslint": "^5.11.0",
+    "whatsappcloudapi_wrapper": "^1.0.13"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/dotenv": "^4.0.3",
+    "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^12.12.17",
+    "mocha": "^5.2.0",
+    "typescript": "^3.0.1",
+    "typescript-eslint-parser": "^18.0.0",
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+    "build": "tsc --project './tsconfig.json'",
+    "start:dev": " cross-env NODE_ENV=development  && nodemon",
+    "test": "tsc --project './tsconfig.json' && ./node_modules/.bin/mocha dist/**/*.spec.js",
+    "lint": "./node_modules/.bin/tslint -c tslint.json 'src/**/**.ts'"
+  },
+  "author": "VENKATESH CHAVVAKULA <venkateshchavvakula198@gmail.com>",
+  "license": "ISC"
+}
