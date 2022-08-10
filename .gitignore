@@ -7,3 +7,4 @@ public/static
 .env.example
 .logs/*.log
 dist/
+.env
